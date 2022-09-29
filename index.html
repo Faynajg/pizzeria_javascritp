@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+<!--empezamos con el Nabvar con su logo-->
+<nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid">
+      <img src="/imagenes/LOGO-COLOR-LA-ECOLOGICA400px-recortada.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-5" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active ms-5" aria-current="page" href="#">¿Quienes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-5" href="#">Multimedia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ms-5" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+  <!--añadimos un carrusel-->
+  <div class="container">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="/imagenes/acogedor.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/ensaladas_eco.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/rollitos_queso.jpg" class="d-block w-100" alt="">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+    </header>
+
+    <!--h1 titulo carta-->
+<div class="d-flex justify-content-center">
+    <img src="/imagenes/LOGO-COLOR-LA-ECOLOGICA400px-recortada.png" alt="">
+</div>
+<h1 class="d-flex justify-content-center">Carta</h1>
+
+
+<!--empezamos con las columnas para los array-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-10 col-md-10">
+            <div id="ricas_tapas" class="container-fluid d-flex justify-content-center ms-5">
+                <h2 class=" me-2">Ensaladas y tapeo</h2>
+            </div>
+            <div id="pizza_eco" class="container-fluid d-flex justify-content-center ms-5">
+                <h2 class="me-2">Pizzas</h2>
+            </div>
+            <div id="postres_eco" class="container-fluid d-flex justify-content-center ms-5">
+                <h2 class="me-2">Postres</h2>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+
+
+
+    <script src="/javascript/ecologica.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
